@@ -1,5 +1,6 @@
 package Books;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Main {
@@ -18,5 +19,19 @@ public class Main {
         System.out.println();
 
         System.out.println(library.getBook("SENSE"));
+        ArrayList<Book> books = new ArrayList<>();
+
+        Book bookObject = new Book("Book Object", "...", 2000);
+        books.add(bookObject);
+
+        if (books.contains(bookObject)) {
+            System.out.println("Book Object was found.");
+        }
+
+        bookObject = new Book("Book Object", "...", 2000);
+
+        if (!books.contains(bookObject)) {
+            System.out.println("Book Object was not found.");
+        }
     }
 }

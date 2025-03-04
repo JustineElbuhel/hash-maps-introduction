@@ -38,4 +38,25 @@ public class Book {
     public String toString(){
         return String.format("Name: %s (%d) \nContent: %s", name, published, content);
     }
+
+//    @Override
+//    public boolean equals(Object comparedObject){
+//        if(this == comparedObject){
+//            return true;
+//        }
+//
+//        if(!(comparedObject instanceof Book)){
+//            return false;
+//        }
+//
+//        Book comparedBook = (Book) comparedObject;
+//
+//        if(this.name.equals(comparedBook.name) &&
+//        this.published == comparedBook.published &&
+//        this.content.equals(comparedBook.content)){
+//            return true;
+//        }
+//
+//        return false;
+//    }
 }
